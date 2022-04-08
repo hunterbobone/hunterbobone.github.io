@@ -1,12 +1,57 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>文档标题</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-</head>
-<body>
-	<h1>啵啵球</h1>
-	<p>一只啵啵球</p>
-</body>
-</html>
+    </head>
+    <style>
+    .middle{
+        background-color: aliceblue;
+        width: 300px;
+        text-align:center;
+        margin: 0 auto;
+    }
+    </style>
+    <body>
+        <canvas id="canvas"></canvas>
+        
+        <div class="middle"><br><br>
+            <p id="time"></p>
+            <p style="font-weight: bold;color:red;font-size: 30px;">一只啵啵球</p>
+            <p style="font-weight: bold;color:orange;font-size: 30px;">两只啵啵球</p>
+            <p style="font-weight: bold;color:yellow;font-size: 30px;">三只啵啵球</p>
+            <p style="font-weight: bold;color:green;font-size: 30px;">四只啵啵球</p>
+            <p style="font-weight: bold;color:paleturquoise;font-size: 30px;">五只啵啵球</p>
+            <p style="font-weight: bold;color:blue;font-size: 30px;">六只啵啵球</p>
+            <p style="font-weight: bold;color:purple;font-size: 30px;">七只啵啵球</p>
+            <br>
+            <button onclick="myFunction()">点我</button>
+            <p id="demo"></p><br>
+        </div>
+
+    </body>
+    <script>
+        var x="";
+	    var time=new Date().getHours();
+	    if (time >= 0 && time <= 6){
+	 	    x="凌晨好啵啵球";
+        }
+	    else if(time > 6 && time <= 12){
+ 		    x="早上好啵啵球";
+ 	    }
+        else if(time > 12 && time <= 18){
+ 		    x="下午好啵啵球";
+ 	    }
+        else if(time > 18 && time <= 24){
+ 		    x="晚上好啵啵球";
+ 	    }
+	    document.getElementById("time").innerHTML=x;
+
+        function myFunction(){
+            var x;
+            var r=confirm("吴欣怡是猪吗");
+            if (r==true){
+                x="吴欣怡是笨猪";
+            }
+            else{
+                x="吴欣怡是笨猪";
+            }
+            document.getElementById("demo").innerHTML=x;
+            }
+        </script>
+    <script>
