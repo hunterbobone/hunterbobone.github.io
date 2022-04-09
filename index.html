@@ -1,17 +1,5 @@
-    </head>
-    <style>
-    .middle{
-        background-color: aliceblue;
-        width: 300px;
-        text-align:center;
-        margin: 0 auto;
-    }
-    </style>
-    <body>
-        <canvas id="canvas"></canvas>
-        
-        <div class="middle"><br><br>
             <p id="time"></p>
+            <img src="bob/1.jpg" style="height: 100px;width: 100px;">
             <p style="font-weight: bold;color:red;font-size: 30px;">一只啵啵球</p>
             <p style="font-weight: bold;color:orange;font-size: 30px;">两只啵啵球</p>
             <p style="font-weight: bold;color:yellow;font-size: 30px;">三只啵啵球</p>
@@ -29,16 +17,16 @@
         var x="";
 	    var time=new Date().getHours();
 	    if (time >= 0 && time <= 6){
-	 	    x="凌晨好啵啵球";
+	 	    x="别熬夜啵啵球";
         }
 	    else if(time > 6 && time <= 12){
- 		    x="早上好啵啵球";
+ 		    x="起来读书啵啵球";
  	    }
         else if(time > 12 && time <= 18){
- 		    x="下午好啵啵球";
+ 		    x="别睡了啵啵球";
  	    }
         else if(time > 18 && time <= 24){
- 		    x="晚上好啵啵球";
+ 		    x="快学习啵啵球";
  	    }
 	    document.getElementById("time").innerHTML=x;
 
